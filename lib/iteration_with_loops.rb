@@ -7,7 +7,12 @@ def join_nested_strings(src)
   while rows < src.length do
     elements = 0
     while elements < src[rows].length do
-      if src[rows][elements].is_a?
+      if src[rows][elements].is_a? == String
+        the_strings << src[rows][elements]
+      end 
+      elements += 1
     end
+    rows +=1
   end
+  the_strings
 end
